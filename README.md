@@ -2,7 +2,12 @@
 Babylonian numerals
 
 keywords:
-	Babylonian, Cuneiform, Santakku
+	Babylonian, Cuneiform, Santakku, glyph, unicode
+
+founded projects:
+	http://www.babelstone.co.uk/
+	http://www.alanwood.net/unicode/utilities_fonts_unix.html
+	http://www.babelstone.co.uk/Unicode/babelmap.html?r1=on
 
 wiki's:
 	https://en.wikipedia.org/wiki/Babylonian_numerals
@@ -18,7 +23,7 @@ TODO: integrate TeX(laTeX)
 	http://users.dickinson.edu/~richesod/math301-401/babylonian.pdf
 
 
-
+https://rainsoft.io/what-every-javascript-developer-should-know-about-unicode/
 http://unicode.org/charts/PDF/U12400.pdf
 http://www.unicode.org/charts/PDF/U12000.pdf
 https://graphemica.com/scripts/cuneiform/
