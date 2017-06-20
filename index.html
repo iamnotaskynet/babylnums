@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-16">
+    <meta charset="utf-8">
     <!-- for mobile responsive style ??? 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     -->
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+    	body {
+    		font-family: Monospace;
+    	}
+    </style>
 
     
   </head>
@@ -19,9 +24,10 @@
     </header>
     <main class="row text-center">
     	<div class="row text-center">
+    		<!-- <form action=""> -->
     		<form>
     			<label for="inputData">Enter integer number </label>
-    			<input type="number" id="inputData">
+    			<input type="number" id="inputData" placeholder="Input number" required>
     			<button type="button" class="btn btn-primary" id="btn-calc" onclick="proceed(5)">Calculate</button>
     		</form>
     	</div>
@@ -29,7 +35,7 @@
     		<p id="p-result">Result should apper here!</p>
     	</div>
     </main>
-
+    <!--
 	<div class="container-fluid text-center">    
 		<div class="row content">
 			<div class="col-sm-2 sidenav">
@@ -111,20 +117,623 @@
 			</div>
 		</div>
 	</div>
+	-->
+	<footer class="footer">
+		<table class="table table-fixed table-bordered table-hover">
+			<thead>
+				<tr  class="info">
+					<th>Character</th>
+					<th>Unicode hex</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&#x12400</td>
+					<td>12400</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12401</td>
+					<td>12401</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12402</td>
+					<td>12402</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12403</td>
+					<td>12403</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12404</td>
+					<td>12404</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12405</td>
+					<td>12405</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12406</td>
+					<td>12406</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12407</td>
+					<td>12407</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12408</td>
+					<td>12408</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12409</td>
+					<td>12409</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1240a</td>
+					<td>1240a</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1240b</td>
+					<td>1240b</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1240c</td>
+					<td>1240c</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1240d</td>
+					<td>1240d</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1240e</td>
+					<td>1240e</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1240f</td>
+					<td>1240f</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12410</td>
+					<td>12410</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12411</td>
+					<td>12411</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12412</td>
+					<td>12412</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12413</td>
+					<td>12413</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12414</td>
+					<td>12414</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12415</td>
+					<td>12415</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12416</td>
+					<td>12416</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12417</td>
+					<td>12417</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12418</td>
+					<td>12418</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12419</td>
+					<td>12419</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1241a</td>
+					<td>1241a</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1241b</td>
+					<td>1241b</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1241c</td>
+					<td>1241c</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1241d</td>
+					<td>1241d</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1241e</td>
+					<td>1241e</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1241f</td>
+					<td>1241f</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12420</td>
+					<td>12420</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12421</td>
+					<td>12421</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12422</td>
+					<td>12422</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12423</td>
+					<td>12423</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12424</td>
+					<td>12424</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12425</td>
+					<td>12425</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12426</td>
+					<td>12426</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12427</td>
+					<td>12427</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12428</td>
+					<td>12428</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12429</td>
+					<td>12429</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1242a</td>
+					<td>1242a</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1242b</td>
+					<td>1242b</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1242c</td>
+					<td>1242c</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1242d</td>
+					<td>1242d</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1242e</td>
+					<td>1242e</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1242f</td>
+					<td>1242f</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12430</td>
+					<td>12430</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12431</td>
+					<td>12431</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12432</td>
+					<td>12432</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12433</td>
+					<td>12433</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12434</td>
+					<td>12434</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12435</td>
+					<td>12435</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12436</td>
+					<td>12436</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12437</td>
+					<td>12437</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12438</td>
+					<td>12438</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12439</td>
+					<td>12439</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1243a</td>
+					<td>1243a</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1243b</td>
+					<td>1243b</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1243c</td>
+					<td>1243c</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1243d</td>
+					<td>1243d</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1243e</td>
+					<td>1243e</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1243f</td>
+					<td>1243f</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12440</td>
+					<td>12440</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12441</td>
+					<td>12441</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12442</td>
+					<td>12442</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12443</td>
+					<td>12443</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12444</td>
+					<td>12444</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12445</td>
+					<td>12445</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12446</td>
+					<td>12446</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12447</td>
+					<td>12447</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12448</td>
+					<td>12448</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12449</td>
+					<td>12449</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1244a</td>
+					<td>1244a</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1244b</td>
+					<td>1244b</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1244c</td>
+					<td>1244c</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1244d</td>
+					<td>1244d</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1244e</td>
+					<td>1244e</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1244f</td>
+					<td>1244f</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12450</td>
+					<td>12450</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12451</td>
+					<td>12451</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12452</td>
+					<td>12452</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12453</td>
+					<td>12453</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12454</td>
+					<td>12454</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12455</td>
+					<td>12455</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12456</td>
+					<td>12456</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12457</td>
+					<td>12457</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12458</td>
+					<td>12458</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12459</td>
+					<td>12459</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1245a</td>
+					<td>1245a</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1245b</td>
+					<td>1245b</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1245c</td>
+					<td>1245c</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1245d</td>
+					<td>1245d</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1245e</td>
+					<td>1245e</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1245f</td>
+					<td>1245f</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12460</td>
+					<td>12460</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12461</td>
+					<td>12461</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12462</td>
+					<td>12462</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12463</td>
+					<td>12463</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12464</td>
+					<td>12464</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12465</td>
+					<td>12465</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12466</td>
+					<td>12466</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12467</td>
+					<td>12467</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12468</td>
+					<td>12468</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12469</td>
+					<td>12469</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1246a</td>
+					<td>1246a</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1246b</td>
+					<td>1246b</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1246c</td>
+					<td>1246c</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1246d</td>
+					<td>1246d</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1246e</td>
+					<td>1246e</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x1246f</td>
+					<td>1246f</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12470</td>
+					<td>12470</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12471</td>
+					<td>12471</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12472</td>
+					<td>12472</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12473</td>
+					<td>12473</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>&#x12474</td>
+					<td>12474</td>
+					<td> </td>
+				</tr>
 
-	<footer>
-		<table></table>
+
+			</tbody>
+		</table>
 	</footer>
-
+	<script src="./num-to-babyl-unicode.js"></script>
     <script type="text/javascript">
     	var resP = document.getElementById('p-result');
 
     	function proceed(number) {
-    		const txt = 'blablabla'
-    		//resP.innerHTML = "TEMP: " + number + "";
-    		resP.innerText = txt;
-    		//return number;
+    		
+    		var tmp = document.getElementById('inputData');
+    		var string = tmp.value;
+    		var calculatedDec = parseBabyl(parseInt(string));
+    		resP.innerText = ""+calculatedDec+"";
+    		
     	}
     </script>
+
+    <audio controls autoplay>
+    	<source src="./audio/song.mp3" type="audio/mpeg">
+    </audio>
   </body>
 </html>

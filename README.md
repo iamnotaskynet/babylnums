@@ -9,10 +9,13 @@ founded projects:
 	http://www.alanwood.net/unicode/utilities_fonts_unix.html
 	http://www.babelstone.co.uk/Unicode/babelmap.html?r1=on
 
+	http://www.wazu.jp/#cuneiform
+
 wiki's:
 	https://en.wikipedia.org/wiki/Babylonian_numerals
 	https://en.wikipedia.org/wiki/Sexagesimal
 	https://oeis.org/wiki/Babylonian_numerals
+	https://oeis.org/wiki/Sexagesimal_numeral_system
 	https://en.wikipedia.org/wiki/Cuneiform_Numbers_and_Punctuation
 	https://en.wikipedia.org/wiki/Cuneiform_script
 
@@ -34,6 +37,7 @@ third-party materials:
 	https://www.easycalculation.com/funny/numerals/babylonian.php
 	http://www.hethport.uni-wuerzburg.de/cuneifont/Unicode%20fonts%20for%20Cuneiform.html
 	http://www.ancientscripts.com/sumerian.html
+	http://www.omniglot.com/writing/sumerian.htm
 
 	http://www.paleoaliens.com/event/babylonian/index.html
 
