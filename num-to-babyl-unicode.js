@@ -12,21 +12,21 @@ function getDigitUnicode(numbersDigit) {
 		case 1:
 			return "\u{12415}"; break;
 		case 2:
-			return "𒐖;"; break;
+			return "\u{12416}"; break;
 		case 3:
-			return "𒐗"; break;
+			return "\u{12417}"; break;
 		case 4:
-			return "𒐘"; break;
+			return "\u{12418}"; break;
 		case 5:
-			return "𒐙"; break;
+			return "\u{12419}"; break;
 		case 6:
-			return "𒐚"; break;
+			return "\u{1241a}"; break;
 		case 7:
-			return "𒐛"; break;
+			return "\u{1241b}"; break;
 		case 8:
-			return "𒐜"; break;
+			return "\u{1241c}"; break;
 		case 9:
-			return "𒐝"; break;
+			return "\u{1241d}"; break;
 		case 10:
 			return "𒐞"; break;
 		case 11:
@@ -130,14 +130,26 @@ function getDigitUnicode(numbersDigit) {
 
 		//Must return "ERROR"
 		default:
-			return ""; break;
+			return "ERROR"; 
+			break;
 	}
 }
 
 function getUnicodesFromeTokenizedArr(arr) {
+	var filteredArr = arr.filter(filteringArrOfUnicodes);
+
 	var result = "";
 	var index = 0;
-	for(var index = 0; index < arr.length; index++) result += " " + getDigitUnicode(arr[index]);
+	for(var index = 0; index < filteredArr.length; index++) 
+		result += " " + getDigitUnicode(filteredArr[index]);
 	
+
 	return result;
+}
+
+function filteringArrOfUnicodes(value) {
+	return 	value != "" &&
+			value != " " &&
+			value != "ERROR" &&
+			value != "undefined";
 }

@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     -->
     <title>babylnums</title>
-<!-- For bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!--  For font -->
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/> -->
-    <script src="https://use.fontawesome.com/a1b34a4696.js"></script>
 
-<!-- I guess all of below does not needed
-
-		For animated.css 
-			<link rel="stylesheet" type="text/css" href="./libs/animated.css">
-
-
-		For jQuery 
-			<script
-		  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-		  crossorigin="anonymous"></script> 
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		 Using jQuery document ready 
-			<script type="text/javascript">
-				$(document).ready(function() {
-					$("#btn-calc").addClass("animated shake");
-					$("#header-h1").addClass("animated shake");
-		 		});
-			</script>
-		or needed;
-		-->
-<!--   /////////////////////// -->
     <style type="text/css">
     	body {
-    		font-family: Monospace;
+    		font-family: LastResort, Monospace;
+    		background: #282923;
+    		color: green;
+    	}
+
+    	#header-h1 {
+    		text-align: center;
+    		padding: 20px;
+    	}
+
+    	#main-input-output {
+    		text-align: center;
+    		padding: 40px;
+    	}
+    	#input-data {
+    		padding: 2px;
+    		color: green;
+    		border: 2px solid darkgreen;
+    	}
+    	#btn-calc {
+    		padding: 5px;
+    		font-size: 20px;
+    		color: darkgreen;
+    	}
+
+    	#p-output-result {
+    		padding-top: 30px;
+    		padding-left: 40px;
+    		padding-right: 40px;
+    		font-size: 80px;
+    		font-weight: bolder;
+    		color: darkgreen;
     	}
     </style>
 
@@ -45,16 +49,15 @@
 
   <body>
 
-    <header class="row text-center">
-
-      <h1 class="text-center" id="header-h1"><strong>Babylonian numerals</strong></h1>
-
+    <header class="">
+    	<h1 class="" id="header-h1"><strong>Babylonian numerals</strong></h1>
     </header>
-    <main class="text-center">
-    	<div class="text-center">
+
+    <main id="main-input-output">
+
     		<!-- <form action=""> -->
-    		<div class="row">
-    			<label for="input-data" class="">Enter integer number </label>
+    		<div class="">
+    			<label for="input-data" class="">Enter integer decimal number: </label>
     			<input 
     				type="number" 
     				id="input-data" 
@@ -67,15 +70,17 @@
     				class="btn btn-primary " 
     				id="btn-calc" 
     				onclick="processButtonClick()" >
-    				<i class="fa fa-arrow-down" >&nbsp;Calculate</i>
+    				<span class="" >&nbsp;Run</span>
     			</button>
     		</div>
-    	</div>
-    	<div class="row text-center">
-    		<p id="p-result">Result should apper here!</p>
+
+
+    	<div class="">
+    		<p id="p-output-result"></p>
     	</div>
     </main>
     
+    <!--
 	<footer class="footer text-center">
 		<table class="table table-fixed table-bordered table-hover">
 			<caption class="text-center">Unicode Cuneiform Numbers and Punctuation</caption>
@@ -683,6 +688,7 @@
 			</tbody>
 		</table>
 	</footer>
+	-->
 	<script src="./num-to-babyl-unicode.js"></script>
     <script type="text/javascript">
 		function load() {
@@ -690,7 +696,7 @@
 		}
 		window.onload = load;
 		//----------------------------------------
-    	var resP = document.getElementById("p-result");
+    	var resultParagraph = document.getElementById("p-output-result");
     	var inputNumber = document.getElementById("input-data");
     	function processButtonClick() {
 
@@ -698,7 +704,7 @@
 
     		var calculatedDec = parseBabyl3(parseInt(inputedString));
 
-    		console.log(calculatedDec);
+    		//console.log(calculatedDec);
 
     		var calcTokenArr = calculatedDec.split(" ");
     		console.log(calcTokenArr);
@@ -706,21 +712,21 @@
     		// Delete empty values
 			calcTokenArr.forEach(function(element) {
 				if(element==="") delete element;
-
+				else if(element===" ") delete element;
+				else if(element==="undefined") delete element;
+				else if(element==="ERROR") delete element;
 				//console.log(element);
 			});
 
 
     		var stringResult = getUnicodesFromeTokenizedArr(calcTokenArr);
-    		console.log(stringResult);
-    		resP.innerText = ""+stringResult+"";
+    		//console.log(stringResult);
+
+    		resultParagraph.innerText = ""+stringResult+"";
     		
-    	}
+    		}
     	
     </script>
 
-    <audio autoplay><!-- //autoplay -->
-    	<source src="./audio/song.mp3" type="audio/mpeg">
-    </audio>
   </body>
 </html>
